@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+    <div class="botones">
+    <ion-button (click) = "goInicio()" id = "inicio"> Inicio </ion-button>
+    <ion-button (click) = "goRuleta()" id = "ruleta"> Ruleta </ion-button>
+    </div>
+
+    <div class="container">
+        <div class="answers">
+    <div class="question" id="pregunta" ><p  > {{ oba?.pregunta }}</p></div>
+    <ion-button fill="clear"  class="answer" id="respuesta1"  [ngClass]="VoF(respuestas?.[0])" (click)="responderPregunta(respuestas?.[0])">
+        {{ respuestas?.[0] }}
+    </ion-button>
+    <ion-button fill="clear" class="answer"  id="respuesta2"  [ngClass]="VoF(respuestas?.[1])" (click)="responderPregunta(respuestas?.[1])">
+        {{ respuestas?.[1] }}
+    </ion-button>
+        </div>
+        <div class="answers">
+    <ion-button fill="clear" class="answer"   id="respuesta3" [ngClass]="VoF(respuestas?.[2])" (click)="responderPregunta(respuestas?.[2])">
+        {{ respuestas?.[2] }}
+    </ion-button>
+    <ion-button fill="clear"  class="answer"  id="respuesta4" [ngClass]="VoF(respuestas?.[3])" (click)="responderPregunta(respuestas?.[3])">
+        {{ respuestas?.[3] }}
+    </ion-button>
+        </div>
+    </div>
+
+    
+
+
+</ion-content>

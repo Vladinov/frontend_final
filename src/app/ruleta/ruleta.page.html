@@ -1,0 +1,13 @@
+
+<ion-content [fullscreen]="true">
+<div>
+<ion-img   (click) = "tirada()" id="ruleta34"  src="https://userscontent2.emaze.com/images/11a89a8b-3459-4b65-9e14-e110478ce720/41c4c783132f80fa9d7584785642ffa1.png">
+</ion-img>
+</div>
+<div id="tyd">
+<p> TEMA :       {{ ruleta?.nombre }}</p>
+<p> DIFICULTAD : {{ ruleta?.dificultad }}</p>
+<ion-button *ngIf="primerboton" (click) = "goPreguntas()" id = "ruleta"> PREGUNTA </ion-button>
+</div>
+
+</ion-content>

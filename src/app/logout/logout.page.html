@@ -1,0 +1,6 @@
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="logout()"  *ngIf="(auth.isAuthenticated$ | async) === true">
+    Logout
+  </ion-button>
+</ion-content>

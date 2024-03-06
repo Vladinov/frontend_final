@@ -1,0 +1,84 @@
+
+
+.verde{
+    color: green;
+}
+
+
+.rojo{
+    color: red;
+}
+
+ion-content {
+    --background: url('https://static.vecteezy.com/system/resources/previews/002/965/575/non_2x/modern-shiny-gradient-blue-banner-background-free-vector.jpg') no-repeat center center / cover;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+  }
+
+  .question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: absolute;
+  }
+
+  .answers {
+    justify-content: space-between;
+    width: 80%; /* Ajusta el ancho según tu preferencia */
+    margin-bottom: 10px; /* Ajusta el margen entre conjuntos de respuestas */
+    position: absolute;
+  }
+
+  .answer {
+    padding: 10px 20px;
+    margin: 0 10px;
+   
+    position: absolute;
+  }
+  #left {
+    margin-left: 25%; /* Ajusta el margen entre respuestas a la izquierda */
+    text-align: center;
+    position: absolute;
+  }
+
+  .botones {
+    text-align: end;
+    
+  }
+
+  #pregunta{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 230px;
+
+  }
+
+  #respuesta1{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+
+  #respuesta2{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 800px;
+  }
+
+  #respuesta3{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 200px;
+  }
+
+  #respuesta4{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 800px;
+  }
