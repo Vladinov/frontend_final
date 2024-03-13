@@ -36,7 +36,7 @@ export class PreguntasPage implements OnInit {
       console.log(this.tema)
 
 
-      this.http.get('http://localhost:3000/preguntas/' + this.tema.id).subscribe((response) => {
+      this.http.get('https://backend-final-k4mq.onrender.com/preguntas/' + this.tema.id).subscribe((response) => {
         console.log(response);
         this.preguntas = response;
 
@@ -44,7 +44,7 @@ export class PreguntasPage implements OnInit {
         console.log(this.random)
         this.oba = this.preguntas[this.random];
 
-        this.http.get('http://localhost:3000/respuestas/' + this.oba.id).subscribe((response:any) => {
+        this.http.get('https://backend-final-k4mq.onrender.com/respuestas/' + this.oba.id).subscribe((response:any) => {
           console.log(response);
           console.log("Respuesta correcta")
         this.respuestacorrecta = response[0].respuesta_correcta;
@@ -91,7 +91,7 @@ export class PreguntasPage implements OnInit {
         }
         console.log(this.resultado)
     }
-    this.http.get('http://localhost:3000/usuarios3/' + this.user.email + '/' + this.resultado).subscribe((response) => {
+    this.http.get('https://backend-final-k4mq.onrender.com/usuarios3/' + this.user.email + '/' + this.resultado).subscribe((response) => {
       console.log(response);
       this.resultado = response;
     })

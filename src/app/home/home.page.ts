@@ -23,13 +23,13 @@ export class HomePage implements OnInit {
     this.user = data
     console.log(this.user);
 
-    this.http.get('http://localhost:3000/usuarios/'+ this.user.email).subscribe((response:any) => {
+    this.http.get('https://backend-final-k4mq.onrender.com/usuarios/'+ this.user.email).subscribe((response:any) => {
       console.log(response);
     });
 
     //to do: post user to backend
 
-    this.http.get('http://localhost:3000/usuarios1/' + this.user.email).subscribe((response) => {
+    this.http.get('https://backend-final-k4mq.onrender.com/usuarios1/' + this.user.email).subscribe((response) => {
       console.log(response);
       this.usuarios = response;
       

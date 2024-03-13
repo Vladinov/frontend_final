@@ -19,7 +19,7 @@ export class RuletaPage implements OnInit {
  
 }
  tirada(){ 
- this.http.get('http://localhost:3000/temas').subscribe((response) => {
+ this.http.get('https://backend-final-k4mq.onrender.com/temas').subscribe((response) => {
     console.log(response);
     this.ruleta = response;
     this.primerboton = true 
